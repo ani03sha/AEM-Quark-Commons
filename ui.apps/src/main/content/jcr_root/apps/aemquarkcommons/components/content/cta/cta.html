@@ -1,5 +1,10 @@
+<sly data-sly-use.ctas="${'org.redquark.aem.commons.core.models.MultifieldModel'}" />
+<div data-sly-list.cta="${ctas.ctaMultifield.listChildren}" >
+	<a href="${cta.buttonUrl}" target="_blank" class="cta_button">${cta.buttonText}</a>
+</div> 
+
 <style>
-.button {
+.cta_button {
   background-color: #4CAF50;
   border: 2px solid;
   color: white;
@@ -12,10 +17,3 @@
   cursor: pointer;
 }
 </style>
-
-
-<div data-sly-use.ctas="${'org.redquark.aem.commons.core.models.MultifieldModel'}">
-	<div data-sly-list.cta="${ctas.ctaMultifield.listChildren}"> 
-        <a target="_blank" class="button" href="#">${cta.buttonText}</a>
-    </div>
-</div>
