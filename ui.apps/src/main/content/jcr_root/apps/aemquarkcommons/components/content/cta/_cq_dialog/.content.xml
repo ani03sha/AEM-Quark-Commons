@@ -39,12 +39,6 @@
                                             fieldDescription="Enter the target URL"
                                             fieldLabel="URL"
                                             name="./buttonUrl"/>
-                                        <buttonQueryParameter
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                            fieldDescription="Enter the query parameters. In case of multiple parameters, separate them by '&amp;'"
-                                            fieldLabel="Query Parameter (Optional)"
-                                            name="./buttonQueryParameter"/>
                                     </items>
                                 </column>
                             </items>
